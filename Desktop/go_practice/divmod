@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func DivMod(a int, b int, div *int, mod *int) {
+	*div = a / b
+	*mod = a % b
+}
+
+func main() {
+	var a int = 10
+	var b int = 3
+	var div, mod int
+	DivMod(a, b, &div, &mod)
+	fmt.Printf("Division result: %d, Modulo result: %d\n", div, mod)
+}
