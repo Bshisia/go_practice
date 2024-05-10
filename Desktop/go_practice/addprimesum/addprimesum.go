@@ -31,9 +31,20 @@ func main() {
 
 	z01.PrintRune('\n')
 }
-func atoi(s string) int {
+// func atoi(s string) int {
+// 	result := 0
+// 	for _, digits := range s {
+// 		if digits >= '0' && digits <= '9' {
+// 			result = result*10 + int(digits-'0')
+// 		} else {
+// 			return -1
+// 		}
+// 	}
+// 	return result
+// }
+func atoi(str string) int {
 	result := 0
-	for _, digits := range s {
+	for _,  digits := range str {
 		if digits >= '0' && digits <= '9' {
 			result = result*10 + int(digits-'0')
 		} else {

@@ -6,11 +6,11 @@ func AppendRange(min, max int) []int {
 	if min >= max {
 		return nil
 	}
-	var res []int
+	var result  []int
 	for i := min; i < max; i++ {
-		res = append(res, i)
+		result = append(result, i)
 	}
-	return res
+	return result
 }
 
 func main() {
