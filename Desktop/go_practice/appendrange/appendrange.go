@@ -3,17 +3,14 @@ package main
 import "fmt"
 
 func AppendRange(min, max int) []int {
-	if min >= max {
-		return nil
+	var res []int
+	for i := min; i <= max; i++ {
+		res = append(res, i)
 	}
-	var result  []int
-	for i := min; i < max; i++ {
-		result = append(result, i)
-	}
-	return result
+	return res
 }
 
 func main() {
-	appended := AppendRange(10, 5)
+	appended := AppendRange(10, 15)
 	fmt.Println(appended)
 }
